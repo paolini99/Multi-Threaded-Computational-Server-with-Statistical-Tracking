@@ -1,5 +1,5 @@
 # Multi-Threaded-Computational-Server-with-Statistical-Tracking
-The program implements a multi-threaded server that manages client connections, processes computation requests, and provides real-time statistics. Below is an explanation of how the program works and its main components:
+The program implements a multi-threaded server that manages client connections, processes computation requests, and provides real-time statistics. Below is an explanation of how the program works and its main components. Additionally, part of the code, specifically the implementation of the classes in the `it.units.project.expression` package, was provided by the university professor as a base for this project.
 
 ### 1. Server Startup
 The program begins with the `Main` class, which serves as the server's entry point. When the user starts the server by providing a port as an argument, the server begins listening for incoming connections on that port.
@@ -34,6 +34,8 @@ Computation requests include mathematical expressions that are processed by a co
 - Support various calculation modes, such as minimum, maximum, average, or counting the results.
 
 The program also provides flexible variable management through the `VariableParser` class, which converts variables into data structures that the server can easily manipulate.
+
+The classes for parsing and managing expressions and variables, such as `Constant`, `Variable`, `Operator`, and `Parser`, were provided by the university professor and are crucial for handling the syntax and computation of mathematical expressions.
 
 ### 5. Real-Time Statistics
 The server gathers information on all received requests. The statistics are updated in a synchronized manner to avoid concurrency issues between different threads. The statistics include:
